@@ -163,6 +163,24 @@ def create_q_knots(plant, pose_lst):
     return q_knots
 
 
+def joint_angles_to_pose(plant, joint_angles):
+    """
+    Forward kinematics: joint angles -> end-effector pose.
+    
+    Args:
+        plant: MultibodyPlant with the robot
+        jointangles: np.array of shape (7,) for iiwa joints
+    
+    Returns:
+        RigidTransform of gripper body frame in world
+    """
+    plant_context = plant.CreateDefaultContext()
+    iiwa = plant.GetModelInstanceByName("iiwa")
+    plant.SetPositions(plant_context, iiwa, joint_angles)
+    gripper_body = plant.GetBodyByName("body")
+    return plant.EvalBodyPoseInWorld(plant_context, gripper_body)
+
+
 def get_launch_speed_required(theta, x, y, g=9.81):
     """
     Calculate required launch speed for projectile motion.
