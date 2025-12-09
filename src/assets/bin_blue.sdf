@@ -36,18 +36,18 @@
       </visual>
       <!-- Front wall -->
       <collision name="front_collision">
-        <pose>0 -0.14 0.08 0 0 0</pose>
+        <pose>0 -0.14 0.11 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.3 0.02 0.14</size>
+            <size>0.3 0.02 0.20</size>
           </box>
         </geometry>
       </collision>
       <visual name="front_visual">
-        <pose>0 -0.14 0.08 0 0 0</pose>
+        <pose>0 -0.14 0.11 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.3 0.02 0.14</size>
+            <size>0.3 0.02 0.20</size>
           </box>
         </geometry>
         <material>
@@ -56,18 +56,18 @@
       </visual>
       <!-- Back wall -->
       <collision name="back_collision">
-        <pose>0 0.14 0.08 0 0 0</pose>
+        <pose>0 0.14 0.11 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.3 0.02 0.14</size>
+            <size>0.3 0.02 0.20</size>
           </box>
         </geometry>
       </collision>
       <visual name="back_visual">
-        <pose>0 0.14 0.08 0 0 0</pose>
+        <pose>0 0.14 0.11 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.3 0.02 0.14</size>
+            <size>0.3 0.02 0.20</size>
           </box>
         </geometry>
         <material>
@@ -76,18 +76,18 @@
       </visual>
       <!-- Left wall -->
       <collision name="left_collision">
-        <pose>-0.14 0 0.08 0 0 0</pose>
+        <pose>-0.14 0 0.11 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.02 0.3 0.14</size>
+            <size>0.02 0.3 0.20</size>
           </box>
         </geometry>
       </collision>
       <visual name="left_visual">
-        <pose>-0.14 0 0.08 0 0 0</pose>
+        <pose>-0.14 0 0.11 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.02 0.3 0.14</size>
+            <size>0.02 0.3 0.20</size>
           </box>
         </geometry>
         <material>
@@ -96,18 +96,18 @@
       </visual>
       <!-- Right wall -->
       <collision name="right_collision">
-        <pose>0.14 0 0.08 0 0 0</pose>
+        <pose>0.14 0 0.11 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.02 0.3 0.14</size>
+            <size>0.02 0.3 0.20</size>
           </box>
         </geometry>
       </collision>
       <visual name="right_visual">
-        <pose>0.14 0 0.08 0 0 0</pose>
+        <pose>0.14 0 0.11 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.02 0.3 0.14</size>
+            <size>0.02 0.3 0.20</size>
           </box>
         </geometry>
         <material>
