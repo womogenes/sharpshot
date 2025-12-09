@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="bin_red">
+    <pose>0 0 0 0 0 0</pose>
+    <link name="bin_link">
+      <inertial>
+        <mass>5</mass>
+        <inertia>
+          <ixx>0.1</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.1</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.1</izz>
+        </inertia>
+      </inertial>
+      <!-- Bottom of bin -->
+      <collision name="bottom_collision">
+        <pose>0 0 0.01 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.3 0.02</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="bottom_visual">
+        <pose>0 0 0.01 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.3 0.02</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.8 0.2 0.2 1.0</diffuse>
+        </material>
+      </visual>
+      <!-- Front wall -->
+      <collision name="front_collision">
+        <pose>0 -0.14 0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.02 0.14</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="front_visual">
+        <pose>0 -0.14 0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.02 0.14</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.8 0.2 0.2 0.8</diffuse>
+        </material>
+      </visual>
+      <!-- Back wall -->
+      <collision name="back_collision">
+        <pose>0 0.14 0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.02 0.14</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="back_visual">
+        <pose>0 0.14 0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.3 0.02 0.14</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.8 0.2 0.2 0.8</diffuse>
+        </material>
+      </visual>
+      <!-- Left wall -->
+      <collision name="left_collision">
+        <pose>-0.14 0 0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.3 0.14</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="left_visual">
+        <pose>-0.14 0 0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.3 0.14</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.8 0.2 0.2 0.8</diffuse>
+        </material>
+      </visual>
+      <!-- Right wall -->
+      <collision name="right_collision">
+        <pose>0.14 0 0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.3 0.14</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="right_visual">
+        <pose>0.14 0 0.08 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.02 0.3 0.14</size>
+          </box>
+        </geometry>
+        <material>
+          <diffuse>0.8 0.2 0.2 0.8</diffuse>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
